@@ -14,9 +14,6 @@ mat = [['r', 'n', 'e'], ['r', 'n', 'n'], [
 newmat = None
 
 
-
-
-
 def is_all_rotten(mat):
     
     for i in mat:
@@ -30,17 +27,11 @@ def is_all_rotten(mat):
 return True
 
 
-
-
-
 def change_to_r(i, j):
     
     if mat[i][j] == 'n':
         
         mat[i][j] = 'r'
-
-
-
 
 
 def ret_pos_of_r(mat, row, cols):
@@ -57,10 +48,6 @@ def ret_pos_of_r(mat, row, cols):
 
 return ls
 
-
-
-
-
 def is_mat_changing(prevmat, newmat):
     
     for i in range(len(prevmat)):
@@ -72,9 +59,6 @@ def is_mat_changing(prevmat, newmat):
                 return True
 
 return False
-
-
-
 
 
 count = 0
@@ -137,10 +121,4 @@ if flag==1:
     
     break
 
-
-
 print(count)
-
-
-
-
